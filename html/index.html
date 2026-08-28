@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>perfSONAR - HOSTNAME</title>
+<!-- FAVICON -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.perfsonar.net/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.perfsonar.net/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.perfsonar.net/images/favicon/favicon-16x16.png">
+<link rel="mask-icon" href="https://www.perfsonar.net/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+<h1>perfSONAR Test Point</h1>
+
+<p>
+Host: <!-- HOSTNAME --><br>
+Site: <!-- Org, City, Nation --><br>
+Network: <!-- NETWORK_NAME --><br>
+Speed: <!-- 1GbE 10GbE 100GbE 400GbE --><br>
+Contact: <!-- Admin Info (dept email, ...) -->
+</p>
+
+<p>
+<b>Acceptable use:</b> Research and Education purposes only.
+This host exists solely for network performance measurement.
+</p>
+
+<hr>
+
+<h2>Measurement services</h2>
+
+<table border="1" cellpadding="4">
+<tr><th>Service</th><th>Tools</th></tr>
+<tr><td>TaskScheduling</td><td>pScheduler</td></tr>
+<tr><td>Latency</td><td>OWAMP, TWAMP</td></tr>
+<tr><td>Throughput</td><td>iperf, iperf3, nuttcp, ethr</td></tr>
+</table>
+
+<h2>Running a test against this host</h2>
+
+<p>From any host with perfSONAR tools installed:</p>
+
+<pre>
+pscheduler ping HOST_IP_OR_DOMAIM
+pscheduler task latency    --dest HOST_IP_OR_DOMAIM
+pscheduler task throughput --dest HOST_IP_OR_DOMAIM -t 10
+pscheduler task trace      --dest HOST_IP_OR_DOMAIM
+</pre>
+
+<p>Throughput tests are rate and duration limited. Please keep runs short and infrequent.</p>
+
+<h2>Links</h2>
+
+<ul>
+<li><a href="/pscheduler">pScheduler API</a> - task and schedule status</li>
+<li><a href="https://stats.perfsonar.net">stats.perfsonar.net</a> - global node directory</li>
+<li><a href="https://docs.perfsonar.net">docs.perfsonar.net</a> - perfSONAR documentation</li>
+</ul>
+
+<hr>
+
+<p>
+This host serves measurement services only and hosts no other content.
+</p>
+
+</body>
+</html>
