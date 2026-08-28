@@ -1,0 +1,7 @@
+# My NTP Servers stratum-1 (Internal infra: short polling interval to minimize clock drift)
+# iburst : send 8 req in init
+# minpoll 4 : 2^4s = 16s
+# maxpoll 6 : 2^6s = 64s
+# prefer : preferences among list
+server ntp1.my.net iburst minpoll 4 maxpoll 6 prefer
+server ntp2.my.net iburst minpoll 4 maxpoll 6 prefer
